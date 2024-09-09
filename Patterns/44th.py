@@ -1,0 +1,14 @@
+a=str(input("value="))
+b=len(a)-1
+i=0
+while(i<=b):
+    j=0
+    while(j<=i):
+        print(a[j],end="")
+        j=j+1
+    j=i-1
+    while(j>=0):
+        print(a[j],end="")
+        j=j-1
+    i=i+1
+    print()
