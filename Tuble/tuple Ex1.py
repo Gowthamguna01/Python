@@ -1,0 +1,5 @@
+atuple=(10,20,30,40,50)
+y=list(atuple)
+y.sort(reverse=True)
+atuple=tuple(y)
+print(atuple)
