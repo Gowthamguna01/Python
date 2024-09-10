@@ -1,9 +1,14 @@
-def oddeven(n):
-    if(n%2==0):
-        return("Even number")
-    if(n%2==1):
-        return("Odd number")
+class Formula:
+    def oddeven(self,n):
+        self.n=n
+        if(self.n%2==0):
+            return("Even number")
+        if(self.n%2==1):
+            return("Odd number")
+
 
 n=int(input("enter n="))
-z=oddeven(n)
-print(z)
+
+x=Formula()
+v=x.oddeven(n)
+print(v)

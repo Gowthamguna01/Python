@@ -1,10 +1,13 @@
-def negative_postive(a):
-    
-    if(a>0):
-        return("positive number")
-    if(a<0):
-        return("negative number")
+class Formula:
+    def negative_postive(self,a):
+        self.a=a
+        if(self.a>0):
+            return("positive number")
+        if(self.a<0):
+            return("negative number")
 
 a=int(input("Enter a="))
-z=negative_postive(a)
-print(z)
+
+x=Formula()
+v=x.negative_postive(a)
+print(v)

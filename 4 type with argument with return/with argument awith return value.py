@@ -1,9 +1,14 @@
-def addition(a,b):#with argument
-    c=a+b
-    return(c)
+class Formula:
+    def addition(self,a,b):
+        self.a=a
+        self.b=b
+        self.c=a+b
+        return(self.c)
 
-a=int(input("enter a number="))#with argument
-b=int(input("enter b number="))
-z=addition(a,b)#with arg+with return
-print(z)#with return
 
+a=int(input("enter a"))
+b=int(input("enter b"))
+
+x=Formula()
+v=x.addition(a,b)
+print(v)

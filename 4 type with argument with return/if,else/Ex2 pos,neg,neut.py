@@ -1,12 +1,15 @@
-def positive_negative(a):
-    
-    if(a>0):
-        return("positive")
-    elif(a<0):
-        return("negative")
-    elif(a==0):
-        return("netural")
+class Formula:
+    def positive_negative(self,a):
+        self.a=a
+        if(self.a>0):
+            return("positive")
+        elif(self.a<0):
+            return("negative")
+        elif(self.a==0):
+            return("netural")
 
 a=int(input("Enter a"))
-z=positive_negative(a)
-print(z)
+
+x=Formula()
+v=x.positive_negative(a)
+print(v)

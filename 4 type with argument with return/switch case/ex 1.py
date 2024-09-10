@@ -1,12 +1,15 @@
-def switch(a):
-    
-    match a:
-        case "a" | "e" | "i" | "o" | "u":
-            return("vowels")
+class Formula:
+    def switch(self,a):
+        self.a=a
+        match a:
+            case "a" | "e" | "i" | "o" | "u":
+                return("vowels")
 
-        case _:
-            return("consonants")
+            case _:
+                return("consonants")
 
 a=str(input("enter value:"))
-z=switch(a)
-print(z)
+
+x=Formula()
+v=x.switch(a)
+print(v)

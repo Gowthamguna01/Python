@@ -1,10 +1,13 @@
-def eligible(a):
-    
-    if(a>=18):
-        return("Eligible for vote")
-    if(a<18):
-        return("Not Eligible for vote")
+class Formula:
+    def eligible(self,a):
+        self.a=a
+        if(self.a>=18):
+            return("Eligible for vote")
+        if(self.a<18):
+            return("Not Eligible for vote")
 
 a=int(input("enter a num="))
-z=eligible(a)
-print(z)
+
+x=Formula()
+v=x.eligible(a)
+print(v)

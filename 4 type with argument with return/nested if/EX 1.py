@@ -1,27 +1,32 @@
-def sales(a):
-    
-    if(a<100000):
-        if(a<=50000 and a<=100000):
-            if(a<=20000 and a<50000):
-                if(a<=10000 and a<20000):
-                    if(a>=0 and a<10000):
-                        b=a*0/100
-                        return("b values",b)
+class Formula:
+    def sales(self,a):
+        self.a=a
+        if(self.a<100000):
+            if(self.a<=50000 and self.a<=100000):
+                if(self.a<=20000 and self.a<50000):
+                    if(self.a<=10000 and self.a<20000):
+                        if(self.a>=0 and self.a<10000):
+                            self.b=self.a*0/100
+                            return("b values",self.b)
+                    else:
+                        self.b=self.a*(5/100)
+                        return("b value",self.b)
                 else:
-                    b=a*(5/100)
-                    return("b value",b)
+                    self.b=self.a*(10/100)
+                    return("b value",self.b)
             else:
-                b=a*(10/100)
-                return("b value",b)
+                self.b=self.a*(15/100)
+                return("b values",self.b)
         else:
-            b=a*(15/100)
-            return("b values",b)
-    else:
-        b=a*(20/100)+500
-        return("b value=",b)
+            self.b=self.a*(20/100)+500
+            return("b value=",self.b)
+
+
 
 a=int(input("enter a="))
-z=sales(a)
-print(z)       
+
+x=Formula()
+v=x.sales(a)
+print(v)       
             
                     

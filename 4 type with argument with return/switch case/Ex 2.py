@@ -1,28 +1,33 @@
-def calculate(a,b,c):
-    
-    match c:
-        case "+":
-            d=a+b
-            return("value is=",d)
+class Formula:
+    def calculate(self,a,b,c):
+        self.a=a
+        self.b=b
+        self.c=c
+        match c:
+            case "+":
+                self.d=self.a+self.b
+                return("value is=",self.d)
 
-        case "-":
-            d=a-b
-            return("value is=",d)
+            case "-":
+                self.d=self.a-self.b
+                return("value is=",self.d)
 
-        case "*":
-            d=a*b
-            return("value is=",d)
+            case "*":
+                self.d=self.a*self.b
+                return("value is=",self.d)
 
-        case "/":
-            d=a/b
-            return("value is=",d)
+            case "/":
+                self.d=self.a/self.b
+                return("value is=",self.d)
 
-        case "%":
-            d=a%b
-            return("value is=",d)
+            case "%":
+                self.d=self.a%self.b
+                return("value is=",self.d)
 
 a=int(input("enter a"))
 b=int(input("enter b"))
 c=str(input("enter value sign:"))
-z=calculate(a,b,c)        
-print(z)
+
+x=Formula()
+v=x.calculate(a,b,c)        
+print(v)

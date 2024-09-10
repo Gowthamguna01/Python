@@ -1,20 +1,23 @@
-def palindrome(a):
-    
-    d=0
-    c=a
-    while(a>0):
-        b=a%10
-        a=a//10
-        d=d*10+b
+class Formula:
+    def palindrome(self,a):
+        self.a=a
+        self.d=0
+        self.c=self.a
+        while(self.a>0):
+            self.b=self.a%10
+            self.a=self.a//10
+            self.d=self.d*10+self.b
         
-    if(d==c):
-        return("palindrome",d)
-    else:
-        return("not a palindrome",d)
+        if(self.d==self.c):
+            return("palindrome",self.d)
+        else:
+            return("not a palindrome",self.d)
 
-    return(d)
+        return(self.d)
 
   
-a=int(input("enter a number="))  
-x=palindrome(a)
-print(x)
+a=int(input("enter a number="))
+
+x=Formula()
+v=x.palindrome(a)
+print(v)

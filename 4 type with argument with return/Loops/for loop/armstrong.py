@@ -1,19 +1,22 @@
 import math
-def armstrong(n):
+class Formula:
+    def armstrong(self,n):
+        self.n=n
+        self.c=len(str(self.n))
+        self.a=self.n
+        self.d=0
+        for self.i in range(self.a,0,-1):
+            self.b=self.a%10
+            self.d=pow(self.b,self.c)+self.d
+            self.a=self.a//10 #loop stop
     
-    c=len(str(n))
-    a=n
-    d=0
-    for i in range(a,0,-1):
-        b=a%10
-        d=pow(b,c)+d
-        a=a//10 #loop stop
+        if(self.d==self.n):
+            return("armstrong",self.d)
+        else:
+            return("not armstrong",self.d)
     
-    if(d==n):
-        return("armstrong",d)
-    else:
-        return("not armstrong",d)
-    
-n=int(input("enter n num="))    
-x=armstrong(n)
-print(x)
+n=int(input("enter n num="))
+
+x=Formula()
+v=x.armstrong(n)
+print(v)

@@ -1,11 +1,15 @@
-def first_last(a):
-    
-    n=[]
-    for i in range(0,a):
-        b=int(input("values="))
-        n.append(b)
-    return(n[0],n[4])
+class Formula:
+    def first_last(self,a,b):
+        self.a=a
+        self.n=[]
+        for self.i in range(0,self.a):
+            self.b=int(input("values="))
+            self.n.append(self.b)
+        return(self.n[0],self.n[4])
 
 a=int(input("enter a number="))
-x=first_last(a)
-print(x)
+
+
+x=Formula()
+v=x.first_last(a,b)
+print(v)

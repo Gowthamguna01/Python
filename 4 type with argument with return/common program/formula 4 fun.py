@@ -1,8 +1,10 @@
-def perimeter(a):
-    P=3*a
-    return(P)
+class Formula:
+    def perimeter(self,a):
+        self.a=a
+        self.P=3*self.a
+        return(self.P)
 
 
 a=int(input("Enter a"))
-z=perimeter(a)
-print(z)
+v=x.perimeter(a)
+print(v)
