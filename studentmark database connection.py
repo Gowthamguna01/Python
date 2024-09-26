@@ -15,7 +15,7 @@ def insert():
     """
     
     val=(a,b,c,d,e,f,g,c,d,e,f,g)#cdefg/5 for avg
-    conn.mycursor.execute(sql, val)
+    conn.mycursor.execute(sql, val) //connect to sql file
     conn.mydb.commit()
     print(conn.mycursor.rowcount,"details inserted")
 
@@ -161,7 +161,7 @@ def marks():
     elif subject==5:
         Social()
     else:
-        print("Invalid choice")
+        print("Invalid")
 
 print("1. Insert")
 print("2. Select")
@@ -171,7 +171,7 @@ print("5. Marks")
 
 ch='y'
 while ch.lower()=='y':
-    x=int(input("Enter choice: "))
+    x=int(input("Enter here: "))
     if x==1:
         insert()
     elif x==2:
@@ -183,7 +183,7 @@ while ch.lower()=='y':
     elif x==5:
         marks()
     else:
-        print("Invalid choice")
+        print("Invalid")
 
     ch=input("Do you want to continue? (y/n): ")
 
