@@ -8,9 +8,44 @@ class File:
             self.f.write(self.c)
             self.f.close()
             print("File Successfully updated :) [visit notepad] ") #Refresh Everytime
-        
+
+            self.f=open(self.a,"r")
+            self.c=self.f.read()
+            print("Letters:", len(self.c)) #find letters count
+            
+            a=0
+            e=0
+            i=0
+            o=0
+            u=0
+            cons=0
+            
+            for d in self.c:  #find vowels count
+                match d:
+                    case 'a':
+                        a=a+1
+                    case 'e':
+                        e=e+1
+                    case 'i':
+                        i=i+1
+                    case 'o':
+                        o=o+1
+                    case 'u':
+                        u=u+1
+                    case _:
+                        cons=cons+1
+                             
+            print("Vowel counts:")
+            print("a count=", a)
+            print("e count=", e)
+            print("i count=", i)
+            print("o count=", o)
+            print("u count=", u)
+            print("consonants count=", cons)
+                
+                
         else:
-            print("File not Available :( ")
+            print("File not Available :( ")  
             self.g=(input("Do you want to continue: yes/no"))
 
             if(self.g=='yes'):
@@ -28,14 +63,47 @@ class File:
                     
                     else:
                         print("Thank you :)")
-            
-    
-        
+
+   
     def read(self):
         self.a=str(input("Enter file name="))
         if os.path.exists(self.a):
             self.f=open(self.a,"r")
             print(self.f.read())
+
+            self.f=open(self.a,"r")
+            self.c=self.f.read()
+            print("Letters:", len(self.c)) #find letters count
+            
+            a=0
+            e=0
+            i=0
+            o=0
+            u=0
+            cons=0
+            
+            for d in self.c:  #find vowels count
+                match d:
+                    case 'a':
+                        a=a+1
+                    case 'e':
+                        e=e+1
+                    case 'i':
+                        i=i+1
+                    case 'o':
+                        o=o+1
+                    case 'u':
+                        u=u+1
+                    case _:
+                        cons=cons+1
+                             
+            print("Vowel counts:")
+            print("a count=", a)
+            print("e count=", e)
+            print("i count=", i)
+            print("o count=", o)
+            print("u count=", u)
+            print("consonants count=", cons)
             
         else:
             print("File not Available :( ")
@@ -66,6 +134,40 @@ class File:
             self.f.write(self.c)
             self.f.close()
             print("File successfully Updated :)")
+
+            self.f=open(self.a,"r")
+            self.c=self.f.read()
+            print("Letters:", len(self.c)) #find letters count
+            
+            a=0
+            e=0
+            i=0
+            o=0
+            u=0
+            cons=0
+            
+            for d in self.c:  #find vowels count
+                match d:
+                    case 'a':
+                        a=a+1
+                    case 'e':
+                        e=e+1
+                    case 'i':
+                        i=i+1
+                    case 'o':
+                        o=o+1
+                    case 'u':
+                        u=u+1
+                    case _:
+                        cons=cons+1
+                             
+            print("Vowel counts:")
+            print("a count=", a)
+            print("e count=", e)
+            print("i count=", i)
+            print("o count=", o)
+            print("u count=", u)
+            print("consonants count=", cons)
 
         else:
             print("File not Available :( ")
