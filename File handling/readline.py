@@ -1,0 +1,7 @@
+g=open("append.txt","r")
+print(g.readline())
+print(g.readline())
+print(g.readline())
+print(g.readline())
+print(g.readline())
+print(g.readline())
