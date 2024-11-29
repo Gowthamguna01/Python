@@ -1,0 +1,23 @@
+grade=lambda tam,eng,math,phy,che,ave:print("fail")if(tam<35 or eng<35 or math<35 or phy<35 or che<35)else print("Grade is O")if(ave>90)else print("Grade is A")if(ave>75)else print("Grade is B")if(ave>50)else print("fail")
+
+name=input("Enter name:")
+rollno=input("Enter RollNo:")
+year=int(input("Enter Year:"))
+mobno=input("Enter mobile number:")
+tam=float(input("Enter Tamil:"))
+eng=float(input("Enter English:"))
+math=float(input("Enter Maths:"))
+phy=float(input("Enter Physics:"))
+che=float(input("Enter Chemistry:"))
+tot=tam+eng+math+phy+che
+ave=tot/5
+print("Name=", name)
+print("Roll No:", rollno)
+print("Year:", year)
+print("Tamil:", tam)
+print("English:", eng)
+print("Maths:", math)
+print("Physics:", phy)
+print("Chemistry:", che)
+print("Total:", tot)
+grade(tam,eng,math,phy,che,ave)
